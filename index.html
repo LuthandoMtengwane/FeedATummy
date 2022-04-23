@@ -16,7 +16,7 @@
  .hero{
      background-image: url('images/kate.JPG');
      max-width: 100%;
-     height: auto;
+     height: 100vh;
      background-repeat: no-repeat;
      background-size: 100%;
      padding-bottom: 1%;
@@ -28,11 +28,25 @@
     
   }
 } 
+@media only screen and (max-width: 600px) {
+  .hero {
+   height: auto;
+    
+  }
+} 
+
+
  .hero-text{
      color: white;
-     text-align: center;
-   
+
  }
+ @media only screen and (min-width: 600px) {
+  .hero-text {
+    text-align: center;
+   
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .slogan {
     padding-left: 42.5%;
@@ -135,7 +149,7 @@ padding-left:23px;
                     <br>
                     And what is better than sparking the minds of the younger generation !
                     <br>
-                    We hope to shed light  
+                    We hope to shed light 
                 </p>
             </article>
 
